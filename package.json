@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "install": "npm install --legacy-peer-deps"
+    "install": "npm install --legacy-peer-deps",
+    "vercel-build": "npm install --legacy-peer-deps && vite build"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
