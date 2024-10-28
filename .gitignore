@@ -7,10 +7,19 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node modules
 node_modules
+
+# Build output
 dist
 dist-ssr
-*.local
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Editor directories and files
 .vscode/*
@@ -21,4 +30,16 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
+*.sw?
+
+# Vite specific files
+.vite
+.vitepress
+.vite/*.cache
+
+# Miscellaneous
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
 *.sw?
