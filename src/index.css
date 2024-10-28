@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif; /* Adjust font family as needed */
+  background-color: #f5f5f5; /* Light gray background for a subtle look */
+  line-height: 1.6; /* Better line spacing */
+  height: 100%;
+  width: 100%;
+}
+
+/* Responsive container */
+.container {
+  max-width: 1200px; /* Limit the max width */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Login and signup page */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white; /* Added background color for contrast */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.login-title {
+  margin-bottom: 20px; /* Space below title */
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.divider {
+  margin: 20px 0;
+  font-weight: bold; /* Make the divider text bold */
+}
+
+.google-login {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #db4437; /* Google color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.google-login:hover {
+  background-color: #c13522; /* Darker shade on hover */
+}
+
+/* For Avatar */
+.avatar-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px dashed #ccc;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.camera-icon {
+  color: #888;
+  font-size: 2.5rem;
+}
+
+.avatar-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Scroll bar for messages */
+.scrollbar {
+  scroll-behavior: smooth;
+  scrollbar-color: blue #f0f0f0; /* For Firefox */
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 30px; /* Width of the scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: white; /* Color of the scrollbar track */
+  border-radius: 15px; /* More rounded corners */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: blue; /* Color of the scrollbar thumb */
+  border-radius: 15px; /* Rounded corners for the thumb */
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: darkblue; /* Darker shade on hover for better visibility */
+}
+
+/* Add any additional styles you need for your chat application */
