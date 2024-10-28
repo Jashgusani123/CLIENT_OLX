@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "install": "npm install --legacy-peer-deps",
-    "vercel-build": "npm install --legacy-peer-deps && vite build"
-  },
+  "preinstall": "npx npm@latest install --legacy-peer-deps",
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "vercel-build": "npm run preinstall && npm run build"
+},
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
