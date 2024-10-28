@@ -37,7 +37,7 @@ const ChatPage = () => {
   const socket = React.useRef();
 
   useEffect(() => {
-    socket.current = io("http://localhost:5000"); // Update with your backend URL
+    socket.current = io("https://server-olx.vercel.app/"); // Update with your backend URL
     socket.current.on("connect", () => {
     });
 
