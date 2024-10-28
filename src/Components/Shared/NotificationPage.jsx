@@ -27,7 +27,7 @@ const NotificationPage = () => {
       if (!userId) return; // Exit early if userId is not available
 
       try {
-        const response = await fetch(`http://localhost:5000/api/v1/notifications/${userId}`);
+        const response = await fetch(`https://server-olx.vercel.app/api/v1/notifications/${userId}`);
         
         // Check if response is ok
         if (!response.ok) {
@@ -53,7 +53,7 @@ const NotificationPage = () => {
   
   const handleClickNotification = (Id)=>{
     setTimeout(async()=>{
-      const response = await fetch(`http://localhost:5000/api/v1/notifications/delete`,{
+      const response = await fetch(`https://server-olx.vercel.app/api/v1/notifications/delete`,{
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body:JSON.stringify({Id}),
